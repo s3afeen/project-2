@@ -19,7 +19,8 @@ header {
     background-color: rgb(0, 0, 0);
     border-bottom: solid white 5px;
 }
-.logo{
+
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,11 +29,10 @@ header {
 
 body {
     background-color: rgb(0, 0, 0)
-    
-
 }
 
 nav {
+
     margin-left: 0px;
     min-width: 500px;
     height: auto;
@@ -80,41 +80,46 @@ section {
 }
 
 .main {
-    
     padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-}
-.moon-image img{
+
+
+    background-image: url("redmoon.jpeg");
+    background-repeat: no-repeat;
+    /* background-position:center; */
+    background-size: 100vh;
     -webkit-mask-image: linear-gradient(black, transparent);
     mask-image: linear-gradient(black, transparent);
-    width: 800px;
-    /* height: 250px; */
+    width: auto;
+    height: auto;
 }
-.personal-image img{
-    -webkit-mask-image: linear-gradient(black, transparent);
-    mask-image: linear-gradient(black, transparent);
+
+.personal-image img {
+    /* -webkit-mask-image: linear-gradient(black, transparent); */
+    /* mask-image: linear-gradient(rgba(37, 37, 37, 0.243), transparent); */
     width: 400px;
 }
+
 .main h2 {
-    color: #575757;
+    color: #ffffff;
     font-size: 1.4em;
     font-weight: 500;
 }
 
-.main h2 span {
+.main h1 span {
     display: inline-block;
     margin-top: 10px;
-    color: blueviolet;
+    color: #7c2dc6;
     font-size: 3em;
     font-weight: 600;
 }
 
 .main h3 {
-    color: #626161;
+    color: #ffffff;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -122,9 +127,13 @@ section {
     margin-bottom: 30px;
 }
 
+.z1 {
+    color: #ffffff;
+}
+
 .main-btn {
-    color: #6b6b6b;
-    background-color: rgb(102, 102, 102);
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -134,25 +143,135 @@ section {
     border-radius: 15px;
     margin-bottom: 40px;
 }
-.media{
+
+.media {
+    color: #ffffff;
+    /* font-size: 500px; */
+    font-weight: 600;
+    /* width: 50px;
+    height: 50px; */
+padding-right: 30px;
+display: flex;
+justify-content: center;
+}
+
+.media:hover{
     color: #ff0000;
-    font-size: 1.7em;
-    padding-right: 50px;
+    /* font-size: 50px; */
+    transform: scale(1.2);
+    transition: 0.5s ease;
 }
-.main2 a{
+
+.main2 a {
     color: aliceblue;
-}
-/* ------------------------------------- */
-.disc{
-    display: flex;
-   -direction: row-reverse;
     
 }
-.disc span{
-    border: solid red 2px;
+
+/* ------------------------------------- */
+.disc {
+    display: flex;
+    -direction: row-reverse;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-color: #440074;
+    /* width: 21.25em; */
+    box-shadow: 0 5px 25px rgba(1 1 1 / 100%);
+    border-radius: 10px;
+    /* padding: 0px; */
+    /* margin: 15px; */
+}
+
+.disc span {
+    border: solid rgb(255, 255, 255) 2px;
     border-radius: 20px;
     color: antiquewhite;
     padding: 50px;
     width: 100%;
+}
 
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #7b3ff3;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 100%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.icon {
+    color: blue;
+    font-size: 80em;
+    text-align: center;
+}
+
+.inform {
+    text-align: center;
+}
+
+.inform h3 {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.Education {
+    background-color: rgb(0, 0, 0);
+}
+
+.Education .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 10px solid #ffffff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.Education-img img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em;
+}
+.about{
+    padding-top: 300px;
+}
+html{
+    scroll-behavior: smooth;
 }
